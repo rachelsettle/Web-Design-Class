@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rachel Settle</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,900" rel="stylesheet">
+  <script type="text/javascript">
+  window.onload = function (evt) {
+    createDocumentStructure('h1');
+  }
+  </script>
+</head>
+<body>
+  <nav class="navbar">
+      <div class="navitem">
+        <ul>
+          <li><a id="current" href="about.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+				</ul>
+      </div>
+  </nav>
+  <div class="aboutme">
+    <img class="circle-pic" src="images/circle-image.png" alt="Picture">
+    <p class="p-aboutme"> Hi there! My name is Rachel Settle. I'm a student at Duke University. I developed this website for my Web-Based Multimedia Communications class. I always knew I was looking for a creative career and after taking this class, I am excited to continue learning about user experience and coding. This website is created with HTML and CSS mainly, with a small amount of JavaScript. When this class ends, I plan to learn JavaScript fully and continue updating this site with new features I learn. Next semester I am taking Experimental Interface Design and Mobile Software Design. My goal is to master both front-end and back-end development.
+		<br>
+		<br>
+		On this site you can find my resume, my portfolio, and my contact information. Enjoy!
+		</p>
+  </div>
+<button class="accordion accordion1">Education</button>
+<div class="panel panel1">
+  <p>
+	Duke University, Durham, North Carolina<br>
+	      May 2019<br></p>
+	          <ul>
+	              <li>GPA: 3.78/4.00, Bachelor of Arts Computer Science & Visual and Media Studies, Markets and Management Certificate</li>
+	              <li>Relevant Coursework: Data Structures and Algorithms, Web-Based Multimedia Communication, Marketing Across Borders and Demographics, Visual Culture</li>
+	              <li>Honors/Awards: Fall 2015, Spring 2016 Dean’s List</li>
+	        </ul>
+	<br>
+	Syosset High School<br>
+	    2011-2015<br>
+	          <ul>
+	            <li>GPA: 98/100</li>
+	              <li>ACT: 34</li>
+	              <li>Regents Diploma with Honors in English, Mathematics, Art, Social Studies and Science, AP Scholar with Honor, National Honor Society, National Spanish Honor Society</li>
+	            </ul>
+</div>
+<button class="accordion accordion2">Experience</button>
+<div class="panel panel2">
+  <p>FlyQ Media and SLAM Magazine, New York, NY, Intern<br>
+	  Summer 2016<br></p>
+	      <ul>
+	          <li>Performed research for media planning and buying; assisted Creative Director in magazine design and original digital artwork</li>
+	      </ul>
+	<br>
+	Camp Timber Lake West, Roscoe, NY, <i>Counselor</i><br>
+	Summer 2014-2016<br>
+	    <ul>
+	      <li>Executive officer and head of costumes for special events; responsible for care of campers at sleep-away camp</li>
+	    </ul>
+</div>
+<button class="accordion accordion3">Interests</button>
+<div id="foo" class="panel panel3">
+  <p>The Standard, Duke University, student run multimedia publication<br>
+  2015-Present<br></p>
+    <ul>
+      <li>Member of marketing/public relations division; initiated marketing strategy for collaboration with other club events</li>
+      <li>Contributed over 10 graphic designs used for advertising, marketing, logos and company promotions</li>
+    </ul>
+    Duke Children's Hospital Committee, Creative Director<br>
+    2015-Present<br>
+      <ul>
+        <li>Responsible for development of graphics and media as well as production of original video content for social media of DCHC</li>
+      </ul>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>

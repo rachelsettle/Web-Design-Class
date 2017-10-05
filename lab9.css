@@ -1,0 +1,23 @@
+#output {
+  border: 1px solid;
+}
+
+input {
+  width: 200px;
+}
+
+#updateDiv {
+  margin: 50px 0;
+}
+
+#html {
+  margin-left: 30px;
+}
+
+p {
+  color: green;
+}
+
+.label {
+  color: black;
+}

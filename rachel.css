@@ -1,0 +1,123 @@
+/*Assignment 3 Style Sheet- Rachel Settle*/
+
+/*this creates the background color of dark gray, sets the body text to white and font Verdana, center aligned*/
+body{
+  background-color: #333333;
+  color: white;
+  font-family: Verdana, sans-serif;
+  text-align: center;
+}
+/*This gives all h1 elements a black text shadow*/
+h1{
+  text-align: center;
+  text-shadow: 2px 2px 5px black;
+}
+/*for the h2 elements, this creates a different background color and gives the text a black shadow*/
+h2{
+  background-color: #30C7FF;
+  color: white;
+  padding: 5px 10px;
+  text-shadow: 2px 2px 5px black;
+}
+/*this aligns all h3 elements to the center of the page*/
+h3{
+  text-align: center;
+}
+/*this makes the nav centered and the text 180% of the default size*/
+nav{
+  text-align: center;
+  font-size: 180%;
+}
+/*this makes the text fill 80% of the page width, by keeping the text slightly off of the edge, it makes it easier to read*/
+p{
+  margin: auto;
+  width: 80%
+}
+
+div{
+  text-align: center;
+}
+/*this makes the div with the id images have a width of 100% and an auto height*/
+div#images{
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/*This code is to format the images, found from W3 schools*/
+div.img {
+margin: 5px;
+border: 1px solid #ccc;
+float: left;
+width: 180px;
+}
+
+div.img img {
+width: 100%;
+height: auto;
+}
+
+h2#name{
+  text-align: center;
+}
+/*this affects the menu bar and creates a background color for the link and changes the default settings*/
+.menubar a:link, a:visited{
+    background-color: #30C7FF;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-shadow: 2px 2px 5px black;
+}
+
+.menubar a:hover, a:active {
+    background-color: #269fcc;
+    text-shadow: 2px 2px 5px black;
+}
+/*this edits the links that are found in the class pagecontent and makes them read, changing to a lighter red when hovered over*/
+.pagecontent a:link{
+  color: red;
+  text-decoration: none;
+}
+
+.pagecontent a:visited{
+  color: red;
+  text-decoration: none;
+}
+
+.pagecontent a:hover{
+  color: #FF4A71;
+  text-decoration: none;
+}
+
+.pagecontent a:active{
+  color: white;
+  text-decoration: none;
+}
+/*this gets rid of the bullets for the unordered list*/
+ul{
+list-style-type: none;
+}
+
+img#portfolio{
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*CODE FOR ASSIGNMENT 5*/
+/*
+.myButtonLink{
+  display: block;
+	width: 100px;
+	height: 100px;
+	background: url ('iss_navbar_aboutme_blue.png') bottom;
+	text-indent: -99999px;
+}
+
+.myButtonLink:hover{
+  background-position: 0 0;
+}
+*/

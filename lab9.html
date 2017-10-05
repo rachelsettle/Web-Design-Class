@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 9</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="lab9.css">
+
+
+
+  <script src="lab9.js"></script>
+</head>
+
+  <body>
+    <p class="label">#input:</p>
+    <div id="input">
+      <span>&lt;div style="</span>
+      <input id="cssProperty" type="text" placeholder="#cssProperty (ex: border)">
+      <span>:&nbsp;</span>
+      <input id="cssValue" type="text" placeholder="#cssValue (ex: 1px solid black)">
+      <span>"&gt;</span>
+      <br>
+      <input id="html" type="text" placeholder="#html (ex: <p>Hello, World</p>)">
+      <br>
+      <span>&lt;/div&gt;</span>
+    </div>
+    <button id="updateDiv" onclick="updateDiv()">updateDiv</button>
+    <p class="label">#output:</p>
+    <div id="output">
+      <p class="label">Hello, World</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,399 @@
+html, body{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+html{
+  font-family: 'Roboto', 'Trebuchet MS', Helvetica, sans-serif;
+}
+
+.navitem ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #181818;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: 'Roboto', 'Trebuchet MS', Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+.navitem li {
+    float: left;
+    text-align: center;
+
+}
+
+.navitem li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 70px;
+    text-decoration: none;
+
+}
+
+/* Change the link color to #111 (black) on hover */
+.navitem li a:hover {
+    background-color: black;
+    color: #18EDE6;
+}
+
+
+
+#current{
+  color: #18EDE6;
+}
+
+.aboutme{
+  background-color: black;
+  padding-bottom: 40px;
+  margin: 0 auto;
+
+}
+
+.circle-pic{
+  width: 20%;
+  height: auto;
+  padding-left: 90px;
+  padding-top: 80px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.p-aboutme{
+  display: inline-block;
+  float: right;
+  width: 70%;
+  font-weight: lighter;
+  color: white;
+  max-width: 600px;
+  padding-right: 300px;
+  padding-left: 40px;
+  padding-top: 100px;
+}
+
+
+button.accordion {
+    color: black;
+    cursor: pointer;
+    padding: 40px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 2em;
+    transition: 0.4s;
+    font-weight: bolder;
+    font-family: 'Roboto', 'Trebuchet MS', Helvetica, sans-serif;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    margin: 0 auto;
+}
+
+button.accordion1, div.panel1{
+	background-color: #18EDE6;
+    }
+
+button.accordion2, div.panel2 {
+	background-color: #0D82F4;
+    }
+
+button.accordion3, div.panel3{
+	background-color: #092CFF;
+    }
+
+button.accordion.active, button.accordion:hover {
+    background-color: black;
+    color: white;
+}
+
+button.accordion:after {
+    content: '\02795';
+    font-size: 20px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796";
+}
+
+div.panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px;
+}
+
+
+.page-split-left{
+  background-color: black;
+  float: left;
+  width: 50%;
+  height: 100vh;
+
+
+
+}
+
+.page-split-right{
+  background-color: #dddddd;
+  float: right;
+  width: 50%;
+  height: 100vh;
+
+
+}
+
+.design-word{
+  font-size: 100pt;
+  float: right;
+  color: #dddddd;
+  padding-top: 300px;
+  padding-right: 150px;
+  text-decoration: none;
+}
+
+.code-word{
+  font-size: 100pt;
+  float: left;
+  color: black;
+  padding-top: 300px;
+  padding-left: 150px;
+  text-decoration: none;
+}
+
+.containergrid {
+    padding-top: 60px;
+    padding-left: 25px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    background-color: #181818;
+    width: 100%;
+    overflow: hidden;
+}
+
+.imagegrid {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+    width:325px;
+}
+
+.codebg{
+  background-color: black;
+}
+
+.code-p{
+  position: fixed; /* or absolute */
+  top: 40%;
+  left: 50%;
+  color: white;
+  font-size: 30pt;
+  line-height: 1.4em;
+  background-color: black;
+  padding: 20px;
+  border-color: white;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.code-p-des{
+  position: fixed; /* or absolute */
+  top: 70%;
+  left: 20%;
+  color: white;
+  font-size: 20pt;
+}
+
+
+
+/*code from https://codepen.io/rexkirby/pen/Fdnlz*/
+
+
+#feedback-page{
+	text-align:center;
+}
+
+#form-main{
+	width:100%;
+	float:left;
+	padding-top:100px;
+}
+
+#form-div {
+	background-color:rgba(72,72,72,0.4);
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	width: 450px;
+	float: left;
+	left: 73%;
+	position: absolute;
+  margin-top:30px;
+	margin-left: -260px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+
+.feedback-input {
+	color:#3c3c3c;
+  font-weight:500;
+	font-size: 18px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+  border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus{
+	background: #fff;
+	box-shadow: 0;
+	border: 3px solid #3498db;
+	color: #3498db;
+	outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+.focused{
+	color:#30aed6;
+	border:#30aed6 solid 3px;
+}
+
+/* Icons ---------------------------------- */
+#name{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#name:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#comment{
+	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+
+#button-blue{
+
+	float:left;
+	width: 100%;
+	border: #fbfbfb solid 4px;
+	cursor:pointer;
+	background-color: #3498db;
+	color:white;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+#button-blue:hover{
+	background-color: rgba(0,0,0,0);
+	color: #0493bd;
+}
+
+.submit:hover {
+	color: #3498db;
+}
+
+.ease {
+	width: 0px;
+	height: 74px;
+	background-color: #fbfbfb;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+}
+
+@media only screen and (max-width: 580px) {
+	#form-div{
+		left: 3%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
+
+.getintouch-p{
+  position: fixed; /* or absolute */
+  top: 4%;
+  left: 8%;
+  color: white;
+  font-size: 50pt;
+  font-weight: lighter;
+  background-color: black;
+  padding: 20px;
+
+}
